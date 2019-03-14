@@ -1,0 +1,259 @@
+//BODY & GENERAL STYLES_______________________________________________________________________________________________
+body {
+    background-color: $color-base-first-lighten;
+    background: linear-gradient(180deg, $color-base-first 0%, $color-base-first-lighten 15%, $color-base-first 30%, $color-base-second-lighten 50%,   $color-base-first 75%);
+}
+
+.blog-topics,
+.translations-cards,
+.pricelist,
+.reference {
+
+    .card {
+        @include border;
+    }
+}
+
+h3{
+    font-size: 1.3rem;
+}
+.jumbotron .jumbotron-fluid .background{
+    background-color: black;
+}
+
+//ALERTS____________________________________________________________________
+
+.alert {
+    p {
+        @include text-color-grayscale;
+    }
+     a {
+        @include link-styles($color-hover: black);
+    }
+    button{
+        .agree{
+           background-color: $color-base-second;
+        }
+        .not-now{
+            background-color: $color-base-second-grayscale;
+        }
+    }
+}
+
+//NAVBAR______________________________________________________________________________________
+
+//most specific navbar styles to omit bootstrap styles. better thing is to find and cancel bootstrap class from navbar
+nav.navbar.navbar-expand-lg {
+    opacity: 0.8;
+    background-color: $color-base-second;
+
+    .collapse.navbar-collapse {
+
+        ul.navbar-nav {
+            li.nav-item {
+                a.nav-link {
+                    color: $color-white;
+                    margin-right: 0.7rem;
+                    &:hover {
+                        color: $color-base-first;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+//font awesome icons
+i{
+    margin-right: 0.5rem;
+    color: $color-base-first-lighten;
+}
+
+
+//JUMBOTRON_________________________________________________________________________________
+.jumbotron {
+    background-color: $color-base-second;
+    opacity: 0.8;
+
+    h1{
+        font-family: $text-font-logo;
+    }
+}
+
+//offer - CARDS____________________________________________________________________
+.translations-cards {
+    margin-bottom: 1rem;
+
+    a.btn {
+        box-shadow: 7px 7px 23px -4px rgba(0, 0, 0, 1);
+        @include button-background-border-font-color;
+        @include center-and-stretch;
+        @include lighten-on-hover;
+        @include greater-on-hover(1.02, 0.3s);
+    }
+
+    p.card-text {
+        @include text-justify-and-indent;
+        @include text-color-grayscale;
+    }
+
+    h3.card-title {
+        text-align: center;
+        padding: 1rem;
+        color: black;
+    }
+}
+
+//PRICE LIST - ACCORDION______________________________________________________________________________
+.collapse {
+
+    table,
+    li {
+        @include text-color-grayscale;
+    }
+
+    td {
+
+        //move up and decrease size
+        .badge {
+            font-size: 0.5em;
+            vertical-align: top;
+        }
+    }
+}
+
+
+.card-header {
+    background: $color-base-second;
+    border-radius: 24px 24px 24px 0px;
+    border: 0.05rem solid white;
+    @include lighten-on-hover;
+
+    &:active {
+        text-decoration: none;
+    }
+
+    button {
+        @include link-styles;
+        @include greater-on-hover;
+    }
+}
+
+//NAVS - BLOG TOPICS ___________________________________________________________________________________
+
+.blog-topics {
+
+    .card {
+        a {
+            @include link-styles($color: $color-base-second-darken, $color-hover:$color-base-second-grayscale);
+        }
+
+    }
+
+    p.card-text {
+        @include text-justify-and-indent;
+    }
+
+    small {
+        color: $color-white;
+    }
+}
+
+//REFERENCE____________________________________________________________________________
+
+div.container.reference {
+    div.card {
+        div.card-body {
+            blockquote {
+                @include text-color-grayscale;
+                @include text-justify-and-indent;
+            }
+
+            h5.card-title
+                {
+                text-align: center;
+                @include text-color-grayscale;
+            }
+        }
+    }
+}
+
+.contact {
+    margin-bottom: 4rem;
+}
+
+//CONTACT_________________________________________________________
+.background-table {
+    background: $color-white;
+    @include border;
+}
+
+.map-responsive {
+    iframe {
+        @include border;
+    }
+}
+
+//footer_____________________________________________________________
+footer{
+a{
+    padding: 0;
+    margin: 0;
+    @include link-styles($color: $color-white);
+}
+}
+//OTHER SITES - BLOG___________________________________________________________________________
+//cookies site_____________________________________________
+.other-sites-general {
+    a {
+        @include link-styles($color-hover: black);
+    }
+
+    .card-header {
+        font-family: $text-font-logo;
+        background-color: $color-base-first-lighten;
+    }
+
+    p {
+        @include text-justify-and-indent;
+    }
+
+    .text-muted {
+        font-size: 0.8em;
+        @include text-justify-and-indent ($align: left, $indent:0);
+    }
+
+    //blockquote additional design
+    blockquote {
+        border-left: 5px solid rgba(221, 221, 221, 0.87);
+        padding-left: 0.5rem;
+        margin-left: 3rem;
+        position: relative;
+
+    }
+    blockquote::after {
+        position: absolute;
+        bottom: 0;
+        right: auto;
+        color: #eee;
+        font-size: 10em;
+        line-height: 0;
+        content: '"';
+        font-family: $text-font-logo;
+    }
+    h3{
+        margin-top: 2rem;
+    }
+    ul{
+        margin: 2rem 0;
+    }
+}
+
+//blog sites--------------------------------------------------------------------
+.text-logo {
+    padding: 2rem 4rem;
+    @include border;
+    h2 {
+        font-family: $text-font-logo;
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no minimum-scale=1.0 maximum-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Schematy i projekty instalacji elektrycznej</title>
+    <meta name="description" content="Jak czytać schematy i projekty elektryczne. Opis najczęstszych symboli elektrycznych w projektach domów jednorodzinnych i mieszkań." />
+
+    <!--    additional fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Caveat:400,700|Courgette|Dancing+Script:400,700|Jua|Lobster&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Bungee+Inline|Caveat:400,700|Courgette|Dancing+Script:400,700|Elsie|Gruppo|Hammersmith+One|Jua|Lobster|Marck+Script|Nothing+You+Could+Do&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <!--     CSS library - animate.css - on MIT LICENSE - https://github.com/daneden/animate.css/blob/master/LICENSE , author and source here:Daniel Eden, https://github.com/daneden/animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--      favicon - more about - https://en.wikipedia.org/wiki/Favicon-->
+    <link rel="Shortcut icon" href="../img/icon.png" />
+    <!--    FONT AWESOME ICONS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--   alerts on start - which you can close - RODO and cookies privacy-->
+    <div class="container">
+
+        <div class="alert  alert-dismissible fade show" role="alert">
+            <p><a href="regulamin.html" class="alert-link" rel="nofollow" target="_blank"><strong>Dbamy o twoje bezpieczeństwo.</strong> W związku ze zmianiami w prawie, prosimy o zapoznanie się z polityką prywatności RODO, w której informujemy o zbieranych danych, celach przetwarzania, czy związanych z tym prawach użytkownika. Wiecej informacji tutaj</a>.</p>
+            <div class="container d-flex justify-content-end">
+                <button type="button" class="btn btn-info " data-dismiss="alert" aria-label="Close">Zgadzam się</button>
+                <button type="button" class="btn btn-light ml-2" data-dismiss="alert" aria-label="Close">Nie teraz</button>
+            </div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+
+        <div class="alert alert-dismissible fade show" role="alert">
+            <p><a href="regulamin.html" class="alert-link" rel="nofollow" target="_blank">
+                    <strong>Strona korzysta z plików typu 'cookies'</strong>, aby świadczyć usługi na najwyższym poziomie. Dalsze korzystanie ze strony oznacza, że zgadzasz się na ich użycie. Więcej informacji o plikach znajdziesz tutaj</a>.</p>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+
+    </div>
+    <!--    navbar start-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top d-flex justify-content-center ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style=""></span> </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <ul class="navbar-nav  ml-auto mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html"><i class="fas fa-home"></i>Strona Główna<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#offer"><i class="fas fa-money-bill-wave-alt"></i>Oferta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#contact"><i class="fas fa-door-open"></i>Kontakt</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-angellist"></i>
+                        O instalacjach elektrycznych
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="zapobieganie-awariom-elektrycznym.html">Jak zapobiegać występowaniu awarii instalacji elektrycznej?</a>
+                        <a class="dropdown-item" href="przyczyny-awarii-elektrycznych.html">Jakie są przyczyny awarii elektrycznych?</a>
+                        <a class="dropdown-item" href="ranking-awarii-elektrycznych.html">Ranking najczęstszych awarii instalacji elektrycznej</a>
+                        <a class="dropdown-item" href="schematy-elektryczne.html">Jak czytać schematy elektryczne?</a>
+                        <a class="dropdown-item" href="laczenie-kabli-w-ziemi.html">Łączenie kabli w ziemi</a>
+                        <a class="dropdown-item" href="planowanie-prac-elektrycznych.html">Planowanie prac elektrycznych</a>
+                        <a class="dropdown-item" href="kabel-a-przewod.html">Czym różni się kabel od przewodu elektrycznego?</a>
+                        <a class="dropdown-item" href="co-kiedy-awaria-pradu.html">Co robić, kiedy zniknie prąd w mieszkaniu?</a>
+                        <a class="dropdown-item" href="wybor-lamp-opraw.html">Czym kierować się przy wyborze lampy do mieszkania?</a>
+                        <a class="dropdown-item" href="plyta-indukcyjna-a-grzewcza.html">Czy warto zamontować płytę indukcyjną u siebie w mieszkaniu?</a>
+                        <a class="dropdown-item" href="elementy-instalacji-elektrycznej.html">Elementy instalacji elektrycznej - omówienie.</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--navbar end-->
+    <!--jumbotron start-->
+    <div class="jumbotron jumbotron-fluid bg-danger text-white text-center">
+        <div class="container">
+            <h1 class="display-1 animated zoomInDown delay-6s">Pogotowie elektryczne w Poznaniu</h1>
+            <p class="lead animated fadeInRightBig rotateInUpLeft">Poznański elektryk od napraw i montażu instalacji elektrycznych</p>
+        </div>
+    </div>
+    <!--jumbotron end-->
+    <!--MAIN CONTENT-->
+    <div class="container other-sites-general">
+        <div class="card mb-3">
+            <div class="jumbotron jumbotron-fluid bg-info text-white text-left text-logo">
+                <h2 class="display-4">Schematy i projekty instalacji elektrycznej</h2>
+            </div>
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-12">
+
+                            <p>Jak czytać projekty elektryczne objaśniające zasilanie gniazd w domu jednorodzinnym, czy oświetlenia domowego? Co oznaczają poszczególne symbole na schematach? Wszystkiego dowiesz się poniżej.</p>
+                            <h2>Jak czytać projekty elektryczne</h2>
+
+                            <img src="../img/schemat-elektryczny/rzut pomieszczen z lampami rastrowymi.jpg" class="img-fluid my-5 mx-auto d-block" alt="oznaczenie symboli instalacji oświetleniowej">
+
+                            <p>W projektach elektrycznych najczęściej wykonywanych - mieszkaniowych, biurowych czy domów jednorodzinnych bardzo często spotkamy się z oznaczeniami instalacji oświetlenia. Na rysunku powyżej widoczne są oznaczenia wyłącznika uniwersalnego, zwanego również pojedynczym. Tego typu wyłączniki charakteryzują się pojedynczym klawiszem, za pomocą którego wysterujemy tylko jedną grupę oświetlenia (lub jedną lampę).</p>
+
+                            <h2>Jak czytać schematy elektryczne</h2>
+                            <img src="../img/schemat-elektryczny/electriclight com pl.jpg" class="img-fluid my-5 mx-auto d-block" alt="źródło: www.elekctriclight.com.pl">
+
+                            <p>źródło grafiki: www.elekctriclight.com.pl</p>
+                            <p>Przeglądając schematy instalacji elektrycznej w domu możemy spotkać się z kilkoma sposobami tworzenia schematów rozdzielnic elektrycznych. Pierwszym, najnowocześniejszym sposobem jest schemat wielokreskowy z wykorzystaniem grafik urządzeń wykonawaczych zainstalowanych w rozdzielni elektrycznej - wyłączników nadmiarowo - prądowych, różnicowo - prądowych, zabezpieczeń przepięciowych, wyłącznika głównego, czy kontrolek faz. Osoba czytająca tego typu schemat powinna wiedzieć jak wyglądają poszczególne elementy wykonawcze instalacji elektrycznej. Jest to bardzo dobre rozwiązanie dla osoby chcącej dowiedzieć się w jaki sposób została połączona gotowa instalacja (rozdzielnia) elektryczna. </p>
+
+                            <img src="../img/schemat-elektryczny/wylacznik pojedynczy schemat.jpg" class="img-fluid my-5 mx-auto d-block" alt="prosty schemat instalacji elektrycznej">
+
+
+                            <p>W górnej części zdjęcia wyróżniono symbol wyłącznika seryjnego. Przy pomocy tego wyłącznika możemy rozdzielić instalację oświetlenia w pokoju i wydzielić dwie grupy oświetlenia. Drugą funkcjonalnością jest możliwość "zapalania lampy w połowie lub w całości". O tym jak będzie sterowane oświetlenie decyduje sposób wykonania instalacji elektrycznej a nie sam wyłącznik, który jest tylko urządzeniem wykonawczym. Symbole tych wyłączników są ustandaryzowane i rzadko występują inne oznaczenia tych elementów instalacji elektrycznej. </p>
+
+
+                            <img src="../img/schemat-elektryczny/wylacznik krzyzowy schemat.jpg" class="img-fluid my-5 mx-auto d-block" alt="oznaczenie wyłącznika schodowego zmiennego">
+
+
+                            <p>Bardzo często w domach i mieszkaniach znajduje zastosowanie wyłącznik zmienny, inaczej zwany schodowym od miejsca zastosowania, ponieważ tego typu wyłączniki elektryczne montuje się na schodach lub w korytarzach by "tu włączyć, a tam wyłączyć".</p>
+
+
+                            <h1>Oznaczenia i symbole wyłączników w projektach elektrycznych</h1>
+                            <h2>Włącznik / Wyłącznik krzyżowy</h2>
+
+                            <img src="../img/schemat-elektryczny/wylacznik-krzyzowy.jpg" class="img-fluid my-5 mx-auto d-block" alt="oznaczenie wyłącznika krzyżowego w instalacji">
+
+                            <p>Symbol wyłącznika krzyżowego może kojarzyć się z jego nazwą. Jest to najdroższy wyłącznik w asortymencie osprzętu elektrycznego. Występuje także w wersji wyłącznika podwójnego krzyżowego. To jakby dwa wyłączniki krzyżowe upakowane w jeden, po to by zaoszczędzić miejsce i móc zamontować w jednej puszce podtynkowej. Wyłączniki krzyżowe stosowane są pomiędzy dwoma wyłącznikami zmiennymi. Np. jak w sytuacji na grafice, kiedy pomieszczenie posiada troje drzwi. W tym przypadku przy drzwiach umieszczonych po środku montujemy wyłącznik krzyżowy, natomiast przy reszcie drzwi wyłączniki schodowe. </p>
+
+                            <h1>Oznaczenia i symbole lamp / opraw elektrycznych w projektach</h1>
+
+                            <img src="../img/schemat-elektryczny/oprawy symbol1.jpg" class="img-fluid my-5 mx-auto d-block" alt="oznaczenie lampy elektrycznej">
+
+
+                            <p>Tak przyjęto oznaczać oprawy elektryczne na projektach elektrycznych.</p>
+
+                            <img src="../img/schemat-elektryczny/oprawy symbol 2.jpg" class="img-fluid my-5 mx-auto d-block" alt="oznaczenie niestandardowe oznaczenie lampy">
+
+                            <p>Jednak w rzeczywistości oprawy, zwane potocznie lampami oznaczane są w różny sposób. Normy dopuszczają oznaczanie opraw różnymi symbolami pod warunkiem załączenia legendy opisującej wszystkie oznaczenia.</p>
+
+                            <img src="../img/schemat-elektryczny/oprawy awaryjne ewakuacyjne schemat.jpg" class="img-fluid my-5 mx-auto d-block" alt="oznaczenie opraw awaryjnych rastrowych ewakuacyjnych">
+
+                            <p>Oprawy ewakucyjne, kierunkowe, jak i inne oprawy użytkowe powinny być oznaczane w taki sposób by bez wglądu w legendę domyślić się typu oprawy oświetleniowej.</p>
+                            <h1>Oznaczenia i symbole gniazd elektrycznych</h1>
+                            <h2>Gniazda elektryczne 230V / RTV / UTP / inne</h2>
+
+                            <img src="../img/schemat-elektryczny/gniazda utp schemat.jpg" class="img-fluid my-5 mx-auto d-block" alt="oznaczenie gniazd elektrycznych">
+
+                            <p>Gniazda elektryczne wtykowe oznaczane s± przez symbole jak na grafice. Gniazda innego typu, takie jak: gniazda UTP - do pod³±czenia internetu, antenowe - do pod³±czenia telewizji, kablówki (w tym tak¿e internetu), czy telefoniczne coraz rzadziej spotykane oznaczane s± w podobny sposób, jednak z dodatkowym opisem, typu "RTV", "KOM", "UTP", lub lekko zmiennionym kszta³tem / kolorem. </p>
+                            <div class="alert alert-dark" role="alert">
+                                <p>Artykuł ma charakter poglądowy i nie może być traktowany jako źródło wiedzy wykorzystywane do rzeczywistych napraw czy prac przy prądzie elektrycznym, ani wniosków teoretycznych mogących prowadzić do błędnych decyzji. Ponadto upomina się, że wszelkie prace związane z prądem elektrycznym, oraz wszelako pojętą instalacją elektryczną, powinny wykonywać osoby do tego uprawnione, z odpowiednim wykształceniem kierunkowym, wiedzą i zaświadczeniami.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted"><a href="../index.html#blog-topics">Przyczytaj więcej o instalacjach elektrycznych, klikając tutaj.</a> </small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--MAIN CONTENT END-->
+    <!--FOOTER -->
+    <footer class="jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid  text-white text-center mb-0 mt-5 bg-danger">
+            <div class="container" id="footer">
+                <p class=""><a href="sites/regulamin.html">Polityka Prywatności</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery first, then Tether/popper, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--   own javascript file - random actions-->
+    <script src="../main.js"></script>
+</body>
+
+</html>

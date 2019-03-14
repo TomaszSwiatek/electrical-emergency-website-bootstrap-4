@@ -1,0 +1,51 @@
+@mixin button-background-border-font-color {
+    background-color: $color-base-second;
+    border-color: $color-base-second-darken;
+    color: $color-white;
+}
+@mixin lighten-on-hover {
+    transition: opacity 0.5s linear;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+@mixin center-and-stretch {
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+@mixin greater-on-hover($size:1.1, $time:0.5s) {
+    transition: transform $time linear;
+    &:hover {
+        transform: scale($size);
+    }
+}
+
+@mixin text-justify-and-indent ($align:justify, $indent:1.5em){
+    text-align:$align;
+    text-indent: $indent;
+}
+
+@mixin text-color-grayscale {
+    color: $color-base-second-grayscale;
+}
+
+@mixin border {
+    border: 0.2rem solid $color-base-second;
+    border-radius: 10px;
+}
+
+@mixin link-styles($color:$color-base-second-grayscale, $color-hover:$color-base-second-grayscale) {
+    color: $color;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $color-hover;
+        text-decoration: none;
+    }
+}
+@mixin padding-left-right($left:0.3em, $right:0.3em){
+     padding-right: $left;
+     padding-left: $right;
+}
